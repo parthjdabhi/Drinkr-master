@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2088180712ADF7319B878381 /* Pods_Drinkr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E29F345ADA7E699FED85017 /* Pods_Drinkr.framework */; };
+		DA36907C1DB0235C00C6A057 /* CouponLayout.png in Resources */ = {isa = PBXBuildFile; fileRef = DA36907A1DB0235C00C6A057 /* CouponLayout.png */; };
+		DA36907D1DB0235C00C6A057 /* RedeemedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DA36907B1DB0235C00C6A057 /* RedeemedButton.png */; };
+		DA3690C01DB0A76D00C6A057 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3690BF1DB0A76D00C6A057 /* SlideMenuController.swift */; };
+		DAC42A801DA5B8190075F524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42A7F1DA5B8190075F524 /* AppDelegate.swift */; };
+		DAC42A821DA5B8190075F524 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42A811DA5B8190075F524 /* ViewController.swift */; };
+		DAC42A851DA5B8190075F524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC42A831DA5B8190075F524 /* Main.storyboard */; };
+		DAC42A881DA5B8190075F524 /* Drinkr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAC42A861DA5B8190075F524 /* Drinkr.xcdatamodeld */; };
+		DAC42A8A1DA5B8190075F524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAC42A891DA5B8190075F524 /* Assets.xcassets */; };
+		DAC42A8D1DA5B8190075F524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAC42A8B1DA5B8190075F524 /* LaunchScreen.storyboard */; };
+		DAC42A981DA5B8190075F524 /* DrinkrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42A971DA5B8190075F524 /* DrinkrTests.swift */; };
+		DAC42AA31DA5B8190075F524 /* DrinkrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42AA21DA5B8190075F524 /* DrinkrUITests.swift */; };
+		DAC42AB11DA5DB210075F524 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAC42AB01DA5DB210075F524 /* GoogleService-Info.plist */; };
+		DAC42AB31DA5DFB90075F524 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42AB21DA5DFB90075F524 /* InitialViewController.swift */; };
+		DAC42AB81DA5E0AC0075F524 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC42AB51DA5E0AC0075F524 /* Background.png */; };
+		DAC42AB91DA5E0AC0075F524 /* FacebookButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC42AB61DA5E0AC0075F524 /* FacebookButton.png */; };
+		DAC42ABA1DA5E0AC0075F524 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC42AB71DA5E0AC0075F524 /* Logo.png */; };
+		DAC42ABC1DA5E1CC0075F524 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42ABB1DA5E1CC0075F524 /* MapViewController.swift */; };
+		DAC42AC01DA5E7B70075F524 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC42ABF1DA5E7B70075F524 /* MBProgressHUD.m */; };
+		DAC42AC91DA5E7FD0075F524 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42AC21DA5E7FD0075F524 /* Helper.swift */; };
+		DAC42ACA1DA5E7FD0075F524 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42AC31DA5E7FD0075F524 /* CommonUtils.swift */; };
+		DAC42ACB1DA5E7FD0075F524 /* RotateImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42AC41DA5E7FD0075F524 /* RotateImage.swift */; };
+		DAC42ACC1DA5E7FD0075F524 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42AC51DA5E7FD0075F524 /* Constants.swift */; };
+		DAC42ACD1DA5E7FD0075F524 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42AC61DA5E7FD0075F524 /* Extensions.swift */; };
+		DAC42ACE1DA5E7FD0075F524 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42AC71DA5E7FD0075F524 /* AppState.swift */; };
+		DAC42ACF1DA5E7FD0075F524 /* AEXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42AC81DA5E7FD0075F524 /* AEXML.swift */; };
+		DAC42AD31DA607E60075F524 /* Header.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC42AD21DA607E60075F524 /* Header.png */; };
+		DAC42AD51DA618B00075F524 /* menu button.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC42AD41DA618B00075F524 /* menu button.png */; };
+		DAC42AD71DA618E20075F524 /* SearchIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC42AD61DA618E20075F524 /* SearchIcon.png */; };
+		DAC42AD91DA6BB590075F524 /* VenueRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42AD81DA6BB590075F524 /* VenueRegisterViewController.swift */; };
+		DAC42ADB1DA6C2CC0075F524 /* VenueInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC42ADA1DA6C2CC0075F524 /* VenueInformationViewController.swift */; };
+		DACD0AE71DAC29DF00989143 /* Edit.png in Resources */ = {isa = PBXBuildFile; fileRef = DACD0AE61DAC29DF00989143 /* Edit.png */; };
+		DACD0AE91DAC458500989143 /* BarPlaceholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DACD0AE81DAC458500989143 /* BarPlaceholder.jpg */; };
+		DACD0AEB1DAC48D900989143 /* WhiteDot.png in Resources */ = {isa = PBXBuildFile; fileRef = DACD0AEA1DAC48D900989143 /* WhiteDot.png */; };
+		DACD0AED1DAC4A2F00989143 /* WhiteCheck.png in Resources */ = {isa = PBXBuildFile; fileRef = DACD0AEC1DAC4A2F00989143 /* WhiteCheck.png */; };
+		DACD0AF01DAC4C8000989143 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DACD0AEE1DAC4C8000989143 /* BackButton.png */; };
+		DACD0AF11DAC4C8000989143 /* LoginButtonRed.png in Resources */ = {isa = PBXBuildFile; fileRef = DACD0AEF1DAC4C8000989143 /* LoginButtonRed.png */; };
+		DACD0AF31DAC4E7700989143 /* VenueLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACD0AF21DAC4E7700989143 /* VenueLoginViewController.swift */; };
+		DACD0AFB1DADF22900989143 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACD0AFA1DADF22900989143 /* UserData.swift */; };
+		DACD0AFD1DAEB6A900989143 /* Bars.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACD0AFC1DAEB6A900989143 /* Bars.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAC42A941DA5B8190075F524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAC42A741DA5B8190075F524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC42A7B1DA5B8190075F524;
+			remoteInfo = Drinkr;
+		};
+		DAC42A9F1DA5B8190075F524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAC42A741DA5B8190075F524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC42A7B1DA5B8190075F524;
+			remoteInfo = Drinkr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E29F345ADA7E699FED85017 /* Pods_Drinkr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drinkr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63D7516C98595C23AC7E62C4 /* Pods-Drinkr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinkr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drinkr/Pods-Drinkr.debug.xcconfig"; sourceTree = "<group>"; };
+		DA36907A1DB0235C00C6A057 /* CouponLayout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CouponLayout.png; sourceTree = "<group>"; };
+		DA36907B1DB0235C00C6A057 /* RedeemedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedeemedButton.png; sourceTree = "<group>"; };
+		DA3690BF1DB0A76D00C6A057 /* SlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuController.swift; sourceTree = "<group>"; };
+		DAC42A7C1DA5B8190075F524 /* Drinkr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drinkr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC42A7F1DA5B8190075F524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAC42A811DA5B8190075F524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAC42A841DA5B8190075F524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAC42A871DA5B8190075F524 /* Drinkr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Drinkr.xcdatamodel; sourceTree = "<group>"; };
+		DAC42A891DA5B8190075F524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAC42A8C1DA5B8190075F524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAC42A8E1DA5B8190075F524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC42A931DA5B8190075F524 /* DrinkrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrinkrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC42A971DA5B8190075F524 /* DrinkrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkrTests.swift; sourceTree = "<group>"; };
+		DAC42A991DA5B8190075F524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC42A9E1DA5B8190075F524 /* DrinkrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrinkrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC42AA21DA5B8190075F524 /* DrinkrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkrUITests.swift; sourceTree = "<group>"; };
+		DAC42AA41DA5B8190075F524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC42AB01DA5DB210075F524 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DAC42AB21DA5DFB90075F524 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		DAC42AB51DA5E0AC0075F524 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		DAC42AB61DA5E0AC0075F524 /* FacebookButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FacebookButton.png; sourceTree = "<group>"; };
+		DAC42AB71DA5E0AC0075F524 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		DAC42ABB1DA5E1CC0075F524 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		DAC42ABE1DA5E7B70075F524 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		DAC42ABF1DA5E7B70075F524 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		DAC42AC11DA5E7C40075F524 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		DAC42AC21DA5E7FD0075F524 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		DAC42AC31DA5E7FD0075F524 /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		DAC42AC41DA5E7FD0075F524 /* RotateImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotateImage.swift; sourceTree = "<group>"; };
+		DAC42AC51DA5E7FD0075F524 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DAC42AC61DA5E7FD0075F524 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DAC42AC71DA5E7FD0075F524 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		DAC42AC81DA5E7FD0075F524 /* AEXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEXML.swift; sourceTree = "<group>"; };
+		DAC42AD21DA607E60075F524 /* Header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Header.png; sourceTree = "<group>"; };
+		DAC42AD41DA618B00075F524 /* menu button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu button.png"; sourceTree = "<group>"; };
+		DAC42AD61DA618E20075F524 /* SearchIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SearchIcon.png; sourceTree = "<group>"; };
+		DAC42AD81DA6BB590075F524 /* VenueRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueRegisterViewController.swift; sourceTree = "<group>"; };
+		DAC42ADA1DA6C2CC0075F524 /* VenueInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueInformationViewController.swift; sourceTree = "<group>"; };
+		DACD0AE61DAC29DF00989143 /* Edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Edit.png; sourceTree = "<group>"; };
+		DACD0AE81DAC458500989143 /* BarPlaceholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BarPlaceholder.jpg; sourceTree = "<group>"; };
+		DACD0AEA1DAC48D900989143 /* WhiteDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteDot.png; sourceTree = "<group>"; };
+		DACD0AEC1DAC4A2F00989143 /* WhiteCheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteCheck.png; sourceTree = "<group>"; };
+		DACD0AEE1DAC4C8000989143 /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
+		DACD0AEF1DAC4C8000989143 /* LoginButtonRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginButtonRed.png; sourceTree = "<group>"; };
+		DACD0AF21DAC4E7700989143 /* VenueLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueLoginViewController.swift; sourceTree = "<group>"; };
+		DACD0AFA1DADF22900989143 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		DACD0AFC1DAEB6A900989143 /* Bars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bars.swift; sourceTree = "<group>"; };
+		FF2D5E85930E8C5135F4EDE6 /* Pods-Drinkr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinkr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Drinkr/Pods-Drinkr.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAC42A791DA5B8190075F524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2088180712ADF7319B878381 /* Pods_Drinkr.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC42A901DA5B8190075F524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC42A9B1DA5B8190075F524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BDCE1862A199F9C8B450EC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63D7516C98595C23AC7E62C4 /* Pods-Drinkr.debug.xcconfig */,
+				FF2D5E85930E8C5135F4EDE6 /* Pods-Drinkr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B5343845782DFDAE8630534 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E29F345ADA7E699FED85017 /* Pods_Drinkr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAC42A731DA5B8190075F524 = {
+			isa = PBXGroup;
+			children = (
+				DAC42AC11DA5E7C40075F524 /* Bridging-Header.h */,
+				DAC42A7E1DA5B8190075F524 /* Drinkr */,
+				DAC42A961DA5B8190075F524 /* DrinkrTests */,
+				DAC42AA11DA5B8190075F524 /* DrinkrUITests */,
+				DAC42A7D1DA5B8190075F524 /* Products */,
+				1BDCE1862A199F9C8B450EC5 /* Pods */,
+				9B5343845782DFDAE8630534 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DAC42A7D1DA5B8190075F524 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAC42A7C1DA5B8190075F524 /* Drinkr.app */,
+				DAC42A931DA5B8190075F524 /* DrinkrTests.xctest */,
+				DAC42A9E1DA5B8190075F524 /* DrinkrUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAC42A7E1DA5B8190075F524 /* Drinkr */ = {
+			isa = PBXGroup;
+			children = (
+				DAC42A7F1DA5B8190075F524 /* AppDelegate.swift */,
+				DAC42A811DA5B8190075F524 /* ViewController.swift */,
+				DAC42AB21DA5DFB90075F524 /* InitialViewController.swift */,
+				DAC42ABB1DA5E1CC0075F524 /* MapViewController.swift */,
+				DA3690BF1DB0A76D00C6A057 /* SlideMenuController.swift */,
+				DAC42ADC1DA6C2E30075F524 /* Venue Screens */,
+				DAC42ABD1DA5E79F0075F524 /* Helper Files */,
+				DAC42AD11DA5E8180075F524 /* Storyboard & List Files */,
+			);
+			path = Drinkr;
+			sourceTree = "<group>";
+		};
+		DAC42A961DA5B8190075F524 /* DrinkrTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAC42A971DA5B8190075F524 /* DrinkrTests.swift */,
+				DAC42A991DA5B8190075F524 /* Info.plist */,
+			);
+			path = DrinkrTests;
+			sourceTree = "<group>";
+		};
+		DAC42AA11DA5B8190075F524 /* DrinkrUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAC42AA21DA5B8190075F524 /* DrinkrUITests.swift */,
+				DAC42AA41DA5B8190075F524 /* Info.plist */,
+			);
+			path = DrinkrUITests;
+			sourceTree = "<group>";
+		};
+		DAC42ABD1DA5E79F0075F524 /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				DACD0AFC1DAEB6A900989143 /* Bars.swift */,
+				DACD0AFA1DADF22900989143 /* UserData.swift */,
+				DAC42AC21DA5E7FD0075F524 /* Helper.swift */,
+				DAC42AC31DA5E7FD0075F524 /* CommonUtils.swift */,
+				DAC42AC41DA5E7FD0075F524 /* RotateImage.swift */,
+				DAC42AC51DA5E7FD0075F524 /* Constants.swift */,
+				DAC42AC61DA5E7FD0075F524 /* Extensions.swift */,
+				DAC42AC71DA5E7FD0075F524 /* AppState.swift */,
+				DAC42AC81DA5E7FD0075F524 /* AEXML.swift */,
+				DAC42AD01DA5E8010075F524 /* MBProgressHUD-master */,
+			);
+			name = "Helper Files";
+			sourceTree = "<group>";
+		};
+		DAC42AD01DA5E8010075F524 /* MBProgressHUD-master */ = {
+			isa = PBXGroup;
+			children = (
+				DAC42ABE1DA5E7B70075F524 /* MBProgressHUD.h */,
+				DAC42ABF1DA5E7B70075F524 /* MBProgressHUD.m */,
+			);
+			name = "MBProgressHUD-master";
+			sourceTree = "<group>";
+		};
+		DAC42AD11DA5E8180075F524 /* Storyboard & List Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAC42A831DA5B8190075F524 /* Main.storyboard */,
+				DAC42A891DA5B8190075F524 /* Assets.xcassets */,
+				DAC42A8B1DA5B8190075F524 /* LaunchScreen.storyboard */,
+				DAC42A8E1DA5B8190075F524 /* Info.plist */,
+				DAC42AB01DA5DB210075F524 /* GoogleService-Info.plist */,
+				DAC42A861DA5B8190075F524 /* Drinkr.xcdatamodeld */,
+				DACD0AE51DAC29D000989143 /* Pictures */,
+			);
+			name = "Storyboard & List Files";
+			sourceTree = "<group>";
+		};
+		DAC42ADC1DA6C2E30075F524 /* Venue Screens */ = {
+			isa = PBXGroup;
+			children = (
+				DACD0AF21DAC4E7700989143 /* VenueLoginViewController.swift */,
+				DAC42AD81DA6BB590075F524 /* VenueRegisterViewController.swift */,
+				DAC42ADA1DA6C2CC0075F524 /* VenueInformationViewController.swift */,
+			);
+			name = "Venue Screens";
+			sourceTree = "<group>";
+		};
+		DACD0AE51DAC29D000989143 /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				DA36907A1DB0235C00C6A057 /* CouponLayout.png */,
+				DA36907B1DB0235C00C6A057 /* RedeemedButton.png */,
+				DACD0AE81DAC458500989143 /* BarPlaceholder.jpg */,
+				DACD0AEC1DAC4A2F00989143 /* WhiteCheck.png */,
+				DACD0AEE1DAC4C8000989143 /* BackButton.png */,
+				DACD0AEF1DAC4C8000989143 /* LoginButtonRed.png */,
+				DACD0AEA1DAC48D900989143 /* WhiteDot.png */,
+				DACD0AE61DAC29DF00989143 /* Edit.png */,
+				DAC42AD21DA607E60075F524 /* Header.png */,
+				DAC42AB51DA5E0AC0075F524 /* Background.png */,
+				DAC42AB61DA5E0AC0075F524 /* FacebookButton.png */,
+				DAC42AB71DA5E0AC0075F524 /* Logo.png */,
+				DAC42AD41DA618B00075F524 /* menu button.png */,
+				DAC42AD61DA618E20075F524 /* SearchIcon.png */,
+			);
+			name = Pictures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAC42A7B1DA5B8190075F524 /* Drinkr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC42AA71DA5B8190075F524 /* Build configuration list for PBXNativeTarget "Drinkr" */;
+			buildPhases = (
+				670401B4E99496EC1D95508D /* [CP] Check Pods Manifest.lock */,
+				DAC42A781DA5B8190075F524 /* Sources */,
+				DAC42A791DA5B8190075F524 /* Frameworks */,
+				DAC42A7A1DA5B8190075F524 /* Resources */,
+				8C41C1C08FCD2C3FE8FF92BA /* [CP] Embed Pods Frameworks */,
+				1B85447730BEDFE58148505F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Drinkr;
+			productName = Drinkr;
+			productReference = DAC42A7C1DA5B8190075F524 /* Drinkr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAC42A921DA5B8190075F524 /* DrinkrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC42AAA1DA5B8190075F524 /* Build configuration list for PBXNativeTarget "DrinkrTests" */;
+			buildPhases = (
+				DAC42A8F1DA5B8190075F524 /* Sources */,
+				DAC42A901DA5B8190075F524 /* Frameworks */,
+				DAC42A911DA5B8190075F524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAC42A951DA5B8190075F524 /* PBXTargetDependency */,
+			);
+			name = DrinkrTests;
+			productName = DrinkrTests;
+			productReference = DAC42A931DA5B8190075F524 /* DrinkrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAC42A9D1DA5B8190075F524 /* DrinkrUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC42AAD1DA5B8190075F524 /* Build configuration list for PBXNativeTarget "DrinkrUITests" */;
+			buildPhases = (
+				DAC42A9A1DA5B8190075F524 /* Sources */,
+				DAC42A9B1DA5B8190075F524 /* Frameworks */,
+				DAC42A9C1DA5B8190075F524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAC42AA01DA5B8190075F524 /* PBXTargetDependency */,
+			);
+			name = DrinkrUITests;
+			productName = DrinkrUITests;
+			productReference = DAC42A9E1DA5B8190075F524 /* DrinkrUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAC42A741DA5B8190075F524 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Harloch;
+				TargetAttributes = {
+					DAC42A7B1DA5B8190075F524 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DAC42A921DA5B8190075F524 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DAC42A7B1DA5B8190075F524;
+					};
+					DAC42A9D1DA5B8190075F524 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DAC42A7B1DA5B8190075F524;
+					};
+				};
+			};
+			buildConfigurationList = DAC42A771DA5B8190075F524 /* Build configuration list for PBXProject "Drinkr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAC42A731DA5B8190075F524;
+			productRefGroup = DAC42A7D1DA5B8190075F524 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAC42A7B1DA5B8190075F524 /* Drinkr */,
+				DAC42A921DA5B8190075F524 /* DrinkrTests */,
+				DAC42A9D1DA5B8190075F524 /* DrinkrUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAC42A7A1DA5B8190075F524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC42AD71DA618E20075F524 /* SearchIcon.png in Resources */,
+				DAC42A8D1DA5B8190075F524 /* LaunchScreen.storyboard in Resources */,
+				DACD0AF01DAC4C8000989143 /* BackButton.png in Resources */,
+				DAC42ABA1DA5E0AC0075F524 /* Logo.png in Resources */,
+				DACD0AEB1DAC48D900989143 /* WhiteDot.png in Resources */,
+				DACD0AF11DAC4C8000989143 /* LoginButtonRed.png in Resources */,
+				DA36907D1DB0235C00C6A057 /* RedeemedButton.png in Resources */,
+				DAC42AB11DA5DB210075F524 /* GoogleService-Info.plist in Resources */,
+				DAC42AB81DA5E0AC0075F524 /* Background.png in Resources */,
+				DACD0AE91DAC458500989143 /* BarPlaceholder.jpg in Resources */,
+				DAC42A8A1DA5B8190075F524 /* Assets.xcassets in Resources */,
+				DACD0AED1DAC4A2F00989143 /* WhiteCheck.png in Resources */,
+				DACD0AE71DAC29DF00989143 /* Edit.png in Resources */,
+				DAC42AD51DA618B00075F524 /* menu button.png in Resources */,
+				DAC42A851DA5B8190075F524 /* Main.storyboard in Resources */,
+				DAC42AD31DA607E60075F524 /* Header.png in Resources */,
+				DA36907C1DB0235C00C6A057 /* CouponLayout.png in Resources */,
+				DAC42AB91DA5E0AC0075F524 /* FacebookButton.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC42A911DA5B8190075F524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC42A9C1DA5B8190075F524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B85447730BEDFE58148505F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Drinkr/Pods-Drinkr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		670401B4E99496EC1D95508D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8C41C1C08FCD2C3FE8FF92BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Drinkr/Pods-Drinkr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAC42A781DA5B8190075F524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC42A821DA5B8190075F524 /* ViewController.swift in Sources */,
+				DAC42AC91DA5E7FD0075F524 /* Helper.swift in Sources */,
+				DAC42AC01DA5E7B70075F524 /* MBProgressHUD.m in Sources */,
+				DAC42ACE1DA5E7FD0075F524 /* AppState.swift in Sources */,
+				DACD0AF31DAC4E7700989143 /* VenueLoginViewController.swift in Sources */,
+				DAC42ADB1DA6C2CC0075F524 /* VenueInformationViewController.swift in Sources */,
+				DAC42A881DA5B8190075F524 /* Drinkr.xcdatamodeld in Sources */,
+				DAC42A801DA5B8190075F524 /* AppDelegate.swift in Sources */,
+				DAC42ACC1DA5E7FD0075F524 /* Constants.swift in Sources */,
+				DA3690C01DB0A76D00C6A057 /* SlideMenuController.swift in Sources */,
+				DAC42AD91DA6BB590075F524 /* VenueRegisterViewController.swift in Sources */,
+				DAC42ACF1DA5E7FD0075F524 /* AEXML.swift in Sources */,
+				DAC42ABC1DA5E1CC0075F524 /* MapViewController.swift in Sources */,
+				DAC42ACB1DA5E7FD0075F524 /* RotateImage.swift in Sources */,
+				DACD0AFB1DADF22900989143 /* UserData.swift in Sources */,
+				DAC42ACA1DA5E7FD0075F524 /* CommonUtils.swift in Sources */,
+				DACD0AFD1DAEB6A900989143 /* Bars.swift in Sources */,
+				DAC42ACD1DA5E7FD0075F524 /* Extensions.swift in Sources */,
+				DAC42AB31DA5DFB90075F524 /* InitialViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC42A8F1DA5B8190075F524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC42A981DA5B8190075F524 /* DrinkrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC42A9A1DA5B8190075F524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC42AA31DA5B8190075F524 /* DrinkrUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAC42A951DA5B8190075F524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAC42A7B1DA5B8190075F524 /* Drinkr */;
+			targetProxy = DAC42A941DA5B8190075F524 /* PBXContainerItemProxy */;
+		};
+		DAC42AA01DA5B8190075F524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAC42A7B1DA5B8190075F524 /* Drinkr */;
+			targetProxy = DAC42A9F1DA5B8190075F524 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAC42A831DA5B8190075F524 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC42A841DA5B8190075F524 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAC42A8B1DA5B8190075F524 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAC42A8C1DA5B8190075F524 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAC42AA51DA5B8190075F524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DAC42AA61DA5B8190075F524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAC42AA81DA5B8190075F524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63D7516C98595C23AC7E62C4 /* Pods-Drinkr.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Drinkr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harloch.Drinkr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAC42AA91DA5B8190075F524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF2D5E85930E8C5135F4EDE6 /* Pods-Drinkr.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Drinkr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harloch.Drinkr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAC42AAB1DA5B8190075F524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DrinkrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harloch.DrinkrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drinkr.app/Drinkr";
+			};
+			name = Debug;
+		};
+		DAC42AAC1DA5B8190075F524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DrinkrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harloch.DrinkrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drinkr.app/Drinkr";
+			};
+			name = Release;
+		};
+		DAC42AAE1DA5B8190075F524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DrinkrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harloch.DrinkrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Drinkr;
+			};
+			name = Debug;
+		};
+		DAC42AAF1DA5B8190075F524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DrinkrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harloch.DrinkrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Drinkr;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAC42A771DA5B8190075F524 /* Build configuration list for PBXProject "Drinkr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC42AA51DA5B8190075F524 /* Debug */,
+				DAC42AA61DA5B8190075F524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC42AA71DA5B8190075F524 /* Build configuration list for PBXNativeTarget "Drinkr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC42AA81DA5B8190075F524 /* Debug */,
+				DAC42AA91DA5B8190075F524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC42AAA1DA5B8190075F524 /* Build configuration list for PBXNativeTarget "DrinkrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC42AAB1DA5B8190075F524 /* Debug */,
+				DAC42AAC1DA5B8190075F524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC42AAD1DA5B8190075F524 /* Build configuration list for PBXNativeTarget "DrinkrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC42AAE1DA5B8190075F524 /* Debug */,
+				DAC42AAF1DA5B8190075F524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DAC42A861DA5B8190075F524 /* Drinkr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DAC42A871DA5B8190075F524 /* Drinkr.xcdatamodel */,
+			);
+			currentVersion = DAC42A871DA5B8190075F524 /* Drinkr.xcdatamodel */;
+			path = Drinkr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DAC42A741DA5B8190075F524 /* Project object */;
+}
