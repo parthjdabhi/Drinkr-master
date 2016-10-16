@@ -23,3 +23,5 @@ class MeasurementHelper: NSObject {
         FIRAnalytics.logEventWithName("message", parameters: nil)
     }
 }
+
+

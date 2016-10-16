@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2088180712ADF7319B878381 /* Pods_Drinkr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E29F345ADA7E699FED85017 /* Pods_Drinkr.framework */; };
+		5E7A9F571DB40A59000CBD21 /* SlidingControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A9F561DB40A59000CBD21 /* SlidingControl.m */; };
 		DA36907C1DB0235C00C6A057 /* CouponLayout.png in Resources */ = {isa = PBXBuildFile; fileRef = DA36907A1DB0235C00C6A057 /* CouponLayout.png */; };
 		DA36907D1DB0235C00C6A057 /* RedeemedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DA36907B1DB0235C00C6A057 /* RedeemedButton.png */; };
 		DA3690C01DB0A76D00C6A057 /* SlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3690BF1DB0A76D00C6A057 /* SlideMenuController.swift */; };
@@ -68,6 +69,8 @@
 
 /* Begin PBXFileReference section */
 		5E29F345ADA7E699FED85017 /* Pods_Drinkr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Drinkr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E7A9F551DB40A59000CBD21 /* SlidingControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingControl.h; sourceTree = "<group>"; };
+		5E7A9F561DB40A59000CBD21 /* SlidingControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingControl.m; sourceTree = "<group>"; };
 		63D7516C98595C23AC7E62C4 /* Pods-Drinkr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Drinkr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Drinkr/Pods-Drinkr.debug.xcconfig"; sourceTree = "<group>"; };
 		DA36907A1DB0235C00C6A057 /* CouponLayout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CouponLayout.png; sourceTree = "<group>"; };
 		DA36907B1DB0235C00C6A057 /* RedeemedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedeemedButton.png; sourceTree = "<group>"; };
@@ -154,6 +157,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5E7A9F541DB40A3E000CBD21 /* SlidingControl */ = {
+			isa = PBXGroup;
+			children = (
+				5E7A9F551DB40A59000CBD21 /* SlidingControl.h */,
+				5E7A9F561DB40A59000CBD21 /* SlidingControl.m */,
+			);
+			name = SlidingControl;
+			sourceTree = "<group>";
+		};
 		9B5343845782DFDAE8630534 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +233,7 @@
 		DAC42ABD1DA5E79F0075F524 /* Helper Files */ = {
 			isa = PBXGroup;
 			children = (
+				5E7A9F541DB40A3E000CBD21 /* SlidingControl */,
 				DACD0AFC1DAEB6A900989143 /* Bars.swift */,
 				DACD0AFA1DADF22900989143 /* UserData.swift */,
 				DAC42AC21DA5E7FD0075F524 /* Helper.swift */,
@@ -495,6 +508,7 @@
 				DAC42A881DA5B8190075F524 /* Drinkr.xcdatamodeld in Sources */,
 				DAC42A801DA5B8190075F524 /* AppDelegate.swift in Sources */,
 				DAC42ACC1DA5E7FD0075F524 /* Constants.swift in Sources */,
+				5E7A9F571DB40A59000CBD21 /* SlidingControl.m in Sources */,
 				DA3690C01DB0A76D00C6A057 /* SlideMenuController.swift in Sources */,
 				DAC42AD91DA6BB590075F524 /* VenueRegisterViewController.swift in Sources */,
 				DAC42ACF1DA5E7FD0075F524 /* AEXML.swift in Sources */,

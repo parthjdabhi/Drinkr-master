@@ -42,3 +42,29 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+
+extension NSDate {
+    func daysOfTheWeek() -> Array<String> {
+        let weekdays = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Satudrday,"
+        ]
+        
+        let calendar: NSCalendar = NSCalendar.currentCalendar()
+        let components: NSDateComponents = calendar.components(.Weekday, fromDate: self)
+        var Days:Array<String> = []
+        Days.append("Today")
+        Days.appendContentsOf(weekdays.suffixFrom(components.weekday))
+        if components.weekday > 0 {
+            Days.appendContentsOf(weekdays.prefixUpTo(components.weekday - 1))
+        }
+        print("daysOfTheWeek Days : \(Days)")
+        return Days
+        //return weekdays[components.weekday - 1]
+    }
+}

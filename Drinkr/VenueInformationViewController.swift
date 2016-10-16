@@ -12,6 +12,7 @@ import CoreLocation
 
 class VenueInformationViewController: UIViewController, UIScrollViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet var vDays: UIView!
     @IBOutlet var checkIcon: UIButton!
     @IBOutlet var editIcon: UIButton!
     @IBOutlet var header: UIImageView!
@@ -49,6 +50,25 @@ class VenueInformationViewController: UIViewController, UIScrollViewDelegate, UI
         drinkForCheckInBool.addTarget(self, action: #selector(VenueInformationViewController.switchIsChanged2(_:)), forControlEvents: UIControlEvents.ValueChanged)
         
         drinkForLikeBool.addTarget(self, action: #selector(VenueInformationViewController.switchIsChanged(_:)), forControlEvents: UIControlEvents.ValueChanged)
+        
+        //Sliding control
+        let sControl = SlidingControl(sectionTitles: NSDate().daysOfTheWeek())
+        sControl.autoresizingMask = [.FlexibleRightMargin, .FlexibleWidth]
+        vDays.layoutIfNeeded()
+        sControl.frame = vDays.frame
+        sControl.frame.origin.y = 0
+        sControl.segmentEdgeInset = UIEdgeInsetsMake(0, 10, 10, 10)
+        sControl.selectionStyle = SlidingControlSelectionStyle.FullWidthStripe
+        sControl.selectionIndicatorLocation = .Down
+        sControl.verticalDividerEnabled = true
+        sControl.verticalDividerColor = UIColor.lightGrayColor()
+        sControl.verticalDividerWidth = 1.0
+        
+        sControl.titleFormatter = [NSForegroundColorAttributeName:UIColor.blackColor()]
+        sControl.selectionIndicatorColor = UIColor.orangeColor()
+        sControl.addTarget(self, action: #selector(VenueInformationViewController.sliderControlChangedValue(_:)), forControlEvents: .ValueChanged)
+        vDays.addSubview(sControl)
+
         
         addressField.userInteractionEnabled = false
         detailsField.userInteractionEnabled = false
@@ -110,6 +130,9 @@ class VenueInformationViewController: UIViewController, UIScrollViewDelegate, UI
         // Dispose of any resources that can be recreated.
     }
 
+    func sliderControlChangedValue(sliderControl:SlidingControl) {
+        print("Selected index \(sliderControl.selectedSegmentIndex) UIControlEventValueChanged")
+    }
     
     @IBAction func editButton(sender: AnyObject) {
         
